@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RSVP - Boris & Agata's Wedding</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+         <li><a href="index.html">Home</a></li>
+         <li><a href="about.html">Our Story</a></li>
+         <li><a href="event.html">Event Details</a></li>
+         <li><a href="rsvp.html">RSVP</a></li>
+         <li><a href="travel.html">Travel</a></li>
+         <li><a href="gallery.html">Gallery</a></li>
+         <li><a href="party.html">Wedding Party</a></li>
+         <li><a href="faq.html">FAQs</a></li>
+         <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h1>RSVP</h1>
+      <form name="rsvp" method="POST" data-netlify="true">
+        <!-- Netlify form hidden input -->
+        <input type="hidden" name="form-name" value="rsvp">
+        
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="attendance">Will you be attending?</label>
+        <select id="attendance" name="attendance" required>
+          <option value="">--Please choose an option--</option>
+          <option value="yes">Yes, I will attend</option>
+          <option value="no">No, I cannot attend</option>
+        </select>
+        
+        <label for="guests">Number of Guests (including you):</label>
+        <input type="number" id="guests" name="guests" min="1" max="10" value="1" required>
+        
+        <label for="message">Additional Message:</label>
+        <textarea id="message" name="message"></textarea>
+        
+        <button type="submit">Submit RSVP</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Boris & Agata</p>
+  </footer>
+</body>
+</html>

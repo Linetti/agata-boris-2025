@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - Boris & Agata's Wedding</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+         <li><a href="index.html">Home</a></li>
+         <li><a href="about.html">Our Story</a></li>
+         <li><a href="event.html">Event Details</a></li>
+         <li><a href="rsvp.html">RSVP</a></li>
+         <li><a href="travel.html">Travel</a></li>
+         <li><a href="gallery.html">Gallery</a></li>
+         <li><a href="party.html">Wedding Party</a></li>
+         <li><a href="faq.html">FAQs</a></li>
+         <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h1>Contact Us</h1>
+      <p>If you have any questions or need more information, please reach out!</p>
+      <form name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact">
+        
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Boris & Agata</p>
+  </footer>
+</body>
+</html>
